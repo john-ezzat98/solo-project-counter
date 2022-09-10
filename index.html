@@ -1,0 +1,39 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="home">
+                <h3>HOME</h3>
+                <p class='black-container' id="home-score">0</p>
+                <div class='points-buttons'>
+                    <button class="score-button" id='home-button-1' onclick="AddOneHome()">
+                        <img src="plus-one-point.png"></button>
+                     <button class="score-button" id='home-button-2' onclick=" AddTwoHome()">
+                         <img src="plus-two-point.png"></button>
+                      <button class="score-button" id='home-button-3' onclick=" AddThreeHome()">
+                          <img src="plus-three-point.png"></button>
+                </div>
+            </div>
+            <div  class="guest">
+                <h3>GUEST</h3>
+                <p class='black-container' id="guest-score">0</p>
+                <div class='points-buttons'>
+                    <button class="score-button" id='guest-button-1' onclick="AddOneGuest()">
+                        <img src="plus-one-point.png"></button>
+                     <button class="score-button" id='guest-button-2' onclick="AddTwoGuest()">
+                         <img src="plus-two-point.png"></button>
+                      <button class="score-button" id='guest-button-3' onclick="AddThreeGuest()">
+                          <img src="plus-three-point.png"></button>
+                </div>
+                
+            </div>
+            
+        </div>
+        <div class="extra">
+        <button id="new-game-button" onclick="resetScore()">New Game</button>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
